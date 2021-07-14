@@ -1,0 +1,174 @@
+body {
+  background: rgb(8,4,0);
+  background: linear-gradient(225deg, rgba(8,4,0,1) 35%, rgba(247,135,43,1) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.site-links ul li:nth-child(4) a {
+    border-bottom: 3px solid rgb(247, 133, 40);
+    padding-bottom: 1px;
+}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+.body-section {
+  position: relative;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+
+.heading h1 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 50px;
+  padding: 30px 0 45px 0;
+  color: white;
+  position: relative;
+}
+
+
+.event {
+  position: relative;
+  background-color: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 180px;
+  width: 100%;
+}
+
+.event-name h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: white;
+  border-bottom: 5px solid white;
+  padding-bottom: 5px;
+  font-weight: 600;
+}
+
+
+.mySlides img {
+  width: 850px;
+  height: 90vh;
+  object-fit: cover;
+  border: 2.5px solid black;
+}
+
+
+.event-description p {
+  color: white;
+  text-align: center;
+  width: 1100px;
+}
+
+
+.event-4-image img {
+  width: 850px;
+  border: 2.5px solid black;
+}
+
+
+
+@media(max-width: 1000px) {
+  .heading h1 {
+      font-size: 30px;
+      padding: 0;
+      margin-bottom: 20px;
+  }
+
+  .event-name h2 {
+    font-size: 18px;
+    border-bottom: 3px solid white;
+    padding-bottom: 3px;
+    width: auto;
+    text-align: center;
+  }
+
+  .mySlides img {
+    width: 90vw;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .event-4-image img {
+    width: 90vw;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .event-description p {
+    width: 300px;
+    font-size: 14px;
+  }
+
+  .event {
+    margin-bottom: 80px;
+  }
+}

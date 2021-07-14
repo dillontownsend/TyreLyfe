@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | TyreLyfe</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'main/css/index_css/index2.css' %}">
+    <link rel="shortcut icon" href="{% static 'main/images/favicon.ico' %}">
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <div class="text">
+                <img src="{% static 'main/images/FinalWhite Long.png' %}" alt="tyrelyfe">
+                <h3>Houston's Finest</h3>
+                <p>Fun in The Sun Cruise - July 11th</p>
+                <a href="{% url 'main:upcoming' %}">Learn More</a>
+            </div>
+            <div class="toggle"></div>
+        </header>
+
+        <video muted autoplay loop src="{% static 'main/videos/tl_video_trimmed_2.mp4' %}"></video>
+
+        <div class="overlay"></div>
+
+
+        <ul class="social">
+            <li><a href="https://www.facebook.com/TyreLyfe/"><img src="{% static 'main/images/social_logos/facebook.svg' %}" alt="facebook"></a></li>
+            <li><a href="https://z-p42.www.instagram.com/tyre.lyfe/"><img src="{% static 'main/images/social_logos/instagram.svg' %}" alt="instagram"></a></li>
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="{% url 'main:index' %}">Home</a></li>
+            <li><a href="{% url 'main:about' %}">About</a></li>
+            <li><a href="{% url 'main:upcoming' %}">Upcoming</a></li>
+            <li><a href="{% url 'main:highlights' %}">Highlights</a></li>
+            <li><a href="mailto:tyrelyfe@gmail.com">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>

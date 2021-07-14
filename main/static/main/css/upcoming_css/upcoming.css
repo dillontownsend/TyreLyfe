@@ -1,0 +1,134 @@
+body {
+    background: rgb(8,4,0);
+    background: linear-gradient(225deg, rgba(8,4,0,1) 35%, rgba(247,135,43,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.site-links ul li:nth-child(3) a {
+    border-bottom: 3px solid rgb(247, 133, 40);
+    padding-bottom: 1px;
+}
+
+
+.body-section {
+    position: relative;
+    margin: 0 auto;
+}
+
+
+.heading h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 50px;
+    padding: 30px 0 45px 0;
+    color: white;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+
+.event {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scale: 1.1;
+}
+
+.event-image img {
+    width: 18.67em;
+    height: 14em;
+    border-left: 2.5px solid black;
+    border-top: 2.5px solid black;
+    border-bottom: 2.5px solid black;
+}
+
+.event-text {
+    background-color: white;
+    width: 30rem;
+    height: 14rem;
+    margin-bottom: 7px;
+    border: 2.5px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.event-text h2, .event-info, .event-text a {
+    padding: 8px 10px;
+}
+
+.event-text p {
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+
+.event-text a {
+    display: inline-block;
+    font-size: 13px;
+    background: black;
+    padding: 6px 20px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.2s;
+    width: min-content;
+    margin-left: 10px;
+}
+
+.event-text a:hover {
+    filter: invert(1);
+}
+
+
+@media(max-width: 1000px) {
+    .heading h1 {
+        font-size: 30px;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    .event {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .event-text {
+        order: 1;
+        margin-top: 30px;
+        width: 80vw;
+        text-align: center;
+    }
+
+    .event-text h2, .event-text p, .event-text a {
+        padding: 4px 6px;
+    }
+
+    .event-text h2 {
+        font-size: 16px;
+    }
+
+    .event-text p {
+        font-size: 13px;
+    }
+
+    .event-text a {
+        font-size: 16px;
+        margin: 3px auto;
+    }
+
+    .event-image {
+        order: 2;
+    }
+
+    .event-image img {
+        width: 80vw;
+        height: auto;
+        border-right: 2.5px solid black;
+    }
+}

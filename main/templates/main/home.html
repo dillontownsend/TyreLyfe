@@ -1,0 +1,20 @@
+{% extends 'main/base.html' %}
+{% block title %}Home{% endblock %}
+
+{% block css_link %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'main/css/home_css/home.css' %}">
+{% endblock %}
+
+{% block body %}
+
+<div class="text">
+    <img src="{% static 'main/images/FinalWhite Long.png' %}" alt="tyrelyfe">
+    <h3>Houston's Finest</h3>
+    <p>Fun in The Sun Cruise - July 11th</p>
+    <a href="{% url 'main:upcoming' %}">Learn More</a>
+</div>
+
+
+
+{% endblock %}

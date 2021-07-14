@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    background-color: #1D1F20;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    position: relative;
+    width: 100%;
+}
+
+.navbar.active {
+    right: 200px;
+}
+
+
+.logo {
+    cursor: pointer;
+}
+
+.logo a img {
+    width: 200px;
+    height: 43px;
+}
+
+
+.site-links ul {
+    list-style-type: none;
+}
+
+.site-links ul li {
+    padding: 0 20px;
+    display: inline-block;
+}
+
+.site-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.site-links ul li a:hover {
+    color: rgb(247, 133, 40);
+    letter-spacing: 2px;
+}
+
+
+.social ul {
+    list-style-type: none;
+}
+
+.social ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+.social ul li a img {
+    width: 25px;
+    height: 25px;
+    filter: invert(1);
+    transition: 0.2s;
+    background: none;
+}
+
+.social ul li a img :hover {
+    scale: 1.15;
+}
+
+
+.toggle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: url('/static/main/images/social_logos/menuwhite.png');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+    flex-shrink: 0;
+    display: inline;
+    display: none;
+}
+
+.toggle.active {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: url('/static/main/images/social_logos/cancel.png');
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    filter: invert(1);
+    flex-shrink: 0;
+    display: inline;
+}
+
+
+.menu {
+    display: none;
+}
+
+.menu.active {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    width: 200px;
+    height: 100vh;
+    background-color: white;
+}
+
+.menu.active ul {
+    position: relative;
+    list-style-type: none;
+}
+
+.menu.active ul li {
+    background-color: white;
+    text-align: center;
+}
+
+.menu.active ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #111;
+    padding: 0 10px;
+    background-color: white;
+}
+
+.menu.active ul li a:hover {
+    color: rgb(247, 133, 40);
+}
+
+.menu.active hr {
+    border-top: 2px solid black;
+    width: 150px;
+    height: 0;
+    margin: 12px 0;
+}
+
+.sidebar-links-top {
+    margin-top: 6rem;
+}
+
+
+
+
+@media(max-width: 1000px) {
+    .navbar {
+        padding: 25px 20px;
+    }
+
+    .toggle {
+        display: inline;
+    }
+
+    .site-links {
+        display: none;
+    }
+
+    .social {
+        display: none;
+    }
+}

@@ -1,0 +1,23 @@
+body {
+    background: rgb(8,4,0);
+    background: linear-gradient(225deg, rgba(8,4,0,1) 35%, rgba(247,135,43,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    padding: 40px;
+}
+
+.form-control {
+    margin-bottom: 30px;
+}
+
+.container.bg-light h1 {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.container.bg-light p {
+    color: rgb(255, 0, 0);
+}

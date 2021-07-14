@@ -1,0 +1,31 @@
+{% extends 'main/base.html' %}
+{% block title %}Upcoming{% endblock %}
+
+{% block css_link %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'main/css/upcoming_css/upcoming.css' %}">
+{% endblock %}
+
+{% block body %}
+
+<div class="body-section">
+    <div class="heading">
+        <h1>Upcoming Events</h1>
+    </div>
+    <div class="event">
+        <div class="event-image">
+            <img src="{% static 'main/images/upcoming_images/event_car.jpg' %}" alt="event image">
+        </div>
+        <div class="event-text">
+            <h2>Fun in the Sun Run - July 11th</h2>
+            <div class="event-info">
+                <p>Start location - Katy Buc-ee's</p>
+                <p>Meet at 9:00A.M.</p>
+                <p>Roll out at 9:30A.M.</p>
+            </div>
+            <a href="{% url 'main:rsvp' %}">RSVP</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

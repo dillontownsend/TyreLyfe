@@ -1,0 +1,45 @@
+{% extends 'main/base.html' %}
+{% block title %}About{% endblock %}
+
+{% block css_link %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'main/css/about_css/about.css' %}">
+{% endblock %}
+
+{% block body %}
+
+<div class="about-body">
+    <div class="top-section">
+        <div class="top-text">
+            <div class="top-heading">
+                <h2>About TyreLyfe</h2>
+            </div>
+            <div class="top-about-text">
+                <p>TyreLyfe was created to provide every single participant an experience they will never forget. Our events, runs, and rallies are designed solely for the purpose of creating organized environments for car owners to enjoy and show off their cars. Every driving route is methodically planned out for pure driver enjoyment.</p>
+            </div>
+        </div>
+
+        <div class="top-image">
+            <img src="{% static 'main/images/about_images/car.jpg' %}" alt="car">
+        </div>
+    </div>
+
+    <div class="bottom-section">
+        <div class="bottom-image">
+            <img src="{% static 'main/images/about_images/zoey.jpg' %}" alt="founder">
+        </div>
+
+        <div class="bottom-info">
+            <div class="bottom-text">
+                <div class="bottom-heading">
+                    <h2>The Founder</h2>
+                </div>
+                <div class="bottom-about-text">
+                    <p>Hi! My name is Zoey Barker. I have been racing cars since I was 11 years old and have loved cars since even before then. It was this passion for automotives that lead me to create TyreLyfe. At its core, TyreLyfe is a means for car lovers to network with one another through shared passion for speed-born thrills and adrenaline.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

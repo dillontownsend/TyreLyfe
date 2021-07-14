@@ -1,0 +1,86 @@
+.site-links ul li:nth-child(1) a {
+    border-bottom: 3px solid rgb(247, 133, 40);
+    padding-bottom: 1px;
+}
+
+body {
+    background: url('/static/main/images/home_images/IMG_4641.JPG') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.text {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+.text img {
+    width: 675px;
+    height: 145.16px;
+    display: block;
+    margin: 0 auto;
+}
+
+.text h3 {
+    font-size: 3.24em;
+    font-weight: 700;
+    color: white;
+}
+
+.text p {
+    font-size: .99em;
+    margin: 10px 0;
+    color: white;
+}
+
+.text a {
+    display: inline-block;
+    font-size: .9em;
+    background: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #111;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.2s;
+}
+
+.text a:hover {
+    letter-spacing: 6px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(97, 94, 91);
+    mix-blend-mode: overlay;
+    z-index: -10;
+}
+
+@media(max-width: 991px) {
+    .text {
+        margin: 0;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .text img {
+        width: 300px;
+        height: auto;
+    }
+
+    .text h3 {
+        font-size: 2em;
+    }
+}
