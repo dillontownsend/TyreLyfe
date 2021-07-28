@@ -76,7 +76,7 @@ body {
     background: none;
 }
 
-.social ul li a img :hover {
+.social ul li a img:hover {
     transform: scale(1.15);
 }
 
