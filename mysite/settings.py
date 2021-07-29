@@ -142,3 +142,9 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 
 django_heroku.settings(locals())
+
+
+#HTTPS settings
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+SECURE_SSL_REDIRECT = True
